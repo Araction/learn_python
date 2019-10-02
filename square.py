@@ -9,9 +9,16 @@ def square(side):
     return perimeter, square, diagonale
 
 
-square_side = int(input("Side: "))
+# Here getting value from user to square_side variable
+square_side = input("Side: ")
+
+# Here convert string value to integer of square_side variable
+square_side = int(square_side)
+
+# Here exec our function with passing args
 result = square(square_side)
+
+# Here print gotten values
 print(f"Perimeter = {result[0]}")
 print(f"Square = {result[1]}")
 print(f"Diagonale = {result[2]}")
-

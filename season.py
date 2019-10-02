@@ -14,11 +14,15 @@ def season(month_number):
 
 
 try:
+    # Here process error when getting user's value
     month = int(input("Input month number: "))
 except ValueError:
+    # Print message if the error has happen
     print("Please, input integer values")
 else:
+    # Here exec our function with passing args if all ok
     result = season(month)
     print(result)
 finally:
+    # Here print will anyway
     print("Program is over")
