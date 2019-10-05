@@ -1,17 +1,24 @@
-
 import math
-def square(a):
 
-    result = None
-    s = a ** 2
-    p = a * 4
-    d = a * math.sqrt(2)
-    tuple(s, p, d)
 
-    return result
+def square(side):
+    perimeter = side * 4
+    square = side ** 2
+    diagonale = side * math.sqrt(2)
 
-side = input("Side A: ")
+    return perimeter, square, diagonale
 
-res = square(side)
 
-print(res)
+# Here getting value from user to square_side variable
+square_side = input("Side: ")
+
+# Here convert string value to integer of square_side variable
+square_side = int(square_side)
+
+# Here exec our function with passing args
+result = square(square_side)
+
+# Here print gotten values
+print(f"Perimeter = {result[0]}")
+print(f"Square = {result[1]}")
+print(f"Diagonale = {result[2]}")
