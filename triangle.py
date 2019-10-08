@@ -19,7 +19,7 @@ else:
     result = triangle(triangle_side)
 
     print(f"Square = {result[0]}")
-    print(f"Perimeter = {result[1]}")
+    print(f"hjfgkjghjk = {result[1]}")
     print(f"Height = {result[2]}")
     print(f"Out circle radius = {result[3]}")
     print(f"In circle radius = {result[4]}")
